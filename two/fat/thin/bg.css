@@ -1,0 +1,313 @@
+body{
+  background-color: #86db9d;
+  overflow: hidden;
+    /* background-size: ?; */
+      }
+
+canvas {
+        border-radius: 570px;
+        position: absolute;
+        z-index: 1;
+        /* visibility: hidden; */
+        width: 67vw;
+        left: 33vw;
+        top: 13vh;
+    }
+
+
+/* #p5div {
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  width: 60vw;
+  left: 30.5vw;
+  top: 30vh;
+    } */
+
+
+#rhyme{
+  position: absolute;
+  left: 38vw;
+  top: 32vh;
+  font-family: 'Quite Magical';
+  font-weight: bold;
+  font-size: 2.2vw;
+  text-align: center;
+  color: #2b108c;
+  z-index: 10;
+}
+
+#peekaboo{
+  position: absolute;
+  left: 45vw;
+  top: 30vh;
+  font-family: 'Quite Magical';
+  font-weight: bold;
+  font-size: 4vw;
+  text-align: center;
+  color: #2b108c;
+  z-index: 10;
+  visibility: hidden;
+}
+
+#peekaboo.active{
+  visibility: visible;
+}
+
+#flap{
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  left: 36vw;
+  top: 32vh;
+
+  /* border-radius: 50%; */
+  display: inline-block;
+  z-index: 6;
+  /* background-color: rgb(179, 175, 206); */
+}
+
+#peek{
+  position: absolute;
+  padding: 10px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: azure;
+  background-color: rgb(63, 2, 7);
+  border-radius: 10%;
+  border: 0;
+  left: 47.6vw;
+  top: 70vh;
+  z-index: 10;
+}
+
+#flap-text{
+  position: absolute;
+  /* color: #c00202; */
+  /* font-family: 'Caveat', cursive; */
+  
+  font-size: 2.5vw;
+  text-align: center;
+  left: 1vw;
+  top: 10vh;
+  font-family: 'Quite Magical';
+
+}
+
+span{
+  animation: shake 10s ease-in;
+}
+
+@keyframes shake {
+  0%{
+    transform: translate(0);
+  }
+  20%,
+  40%,
+  60%,
+  80%{
+    /* transform: translate(.8em); */
+    transform: rotate(180deg);
+    /* box-shadow: 0px 6px 20px rgba(0,0,0,0.5); */
+  }
+  10%,
+  30%,
+  50%{
+    transform: translateX(6em);
+    transform: translateY(2em);
+  }
+  70%,
+  100%{
+    transform: translate(0);
+  }
+
+
+}
+
+@keyframes shake2 {
+  0%{
+    transform: translate(0);
+  }
+  20%,
+  40%,
+  60%,
+  80%{
+    /* transform: translate(.8em); */
+    transform: rotate(43deg);
+    /* box-shadow: 0px 6px 20px rgba(0,0,0,0.5); */
+  }
+  10%,
+  30%,
+  50%{
+    transform: translate(-0.2em);
+  }
+  70%,
+  100%{
+    transform: translate(0);
+  }
+
+
+}
+
+
+#chidiya{
+  position: absolute;
+  width: 5vw;
+  top: 40vh;
+  left: 81vw;
+  animation: fly2 2s infinite;
+  
+}
+
+@keyframes fly {
+
+    50%{
+      transform: rotateZ(30deg)
+    }
+    /* 50%{
+      transform: translate(70px,0px);
+    } */
+  
+}
+
+@keyframes fly2 {
+
+    70%{
+      transform: rotateZ(20deg);
+    }
+    /* 50%{
+      transform: translate(70px,0px);
+    } */
+  
+}
+#chidiya2{
+  position: absolute;
+  left: 10vw;
+  top: 44vh;
+  width: 5vw;
+  animation: fly 2s infinite;
+
+}
+
+#flr1{
+  z-index: 12;
+  width: 5vw;
+  position: absolute;
+  top: 60vh;
+  animation: rot 13s infinite;
+}
+
+#flr12{
+  z-index: 12;
+  width: 4vw;
+  position: absolute;
+  top: 64vh;
+  left: 10vw;
+  animation: rot 15s infinite;
+}
+
+@keyframes rot {
+  50%{
+    transform: rotateZ(90deg);
+  }
+}
+
+
+#flr2{
+  z-index: 12;
+  width: 4vw;
+  position: absolute;
+  top: 60vh;
+  left: 27vw;
+  animation: rot 11s infinite;
+}
+
+#flr22{
+  z-index: 12;
+  width: 4vw;
+  position: absolute;
+  top: 63vh;
+  left: 21vw;
+  animation: rot 16s infinite;
+}
+
+@keyframes rot {
+  70%{
+    transform: rotateZ(-90deg);
+  }
+}
+
+
+#flr3{
+  z-index: 12;
+  width: 4vw;
+  position: absolute;
+  top: 63vh;
+  left: 92vw;
+  animation: rot 11s infinite;
+}
+
+@keyframes rot {
+  50%{
+    transform: rotateZ(90deg);
+  }
+}
+
+
+#flr4{
+  z-index: 3.5;
+  width: 3.5vw;
+  position: absolute;
+  top: 63vh;
+  left: 76vw;
+  animation: rot 10s infinite;
+}
+
+#flr42{
+  z-index: 12;
+  width: 4vw;
+  position: absolute;
+  top: 66vh;
+  left: 85vw;
+  animation: rot 13s infinite;
+}
+
+@keyframes rot {
+  70%{
+    transform: rotateZ(90deg);
+  }
+}
+
+#monkey{
+  transform: rotateZ(20deg);
+  animation: mon 3s infinite;
+}
+
+@keyframes mon {
+  50%{
+    transform: rotateZ(0deg);
+  }
+  
+}
+
+
+#stone1{
+  z-index: 100;
+  position: absolute;
+  width: 12vw;
+  top: 75vh;
+  left: -0.1vw;
+  transform: rotateY(180deg);
+}
+
+#stone2{
+  z-index: 100;
+  position: absolute;
+  width: 11vw;
+  top: 75vh;
+  left: 89vw;
+  transform: rotateY(180deg);
+}
+
+
+

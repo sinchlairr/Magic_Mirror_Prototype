@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bg.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <embed name="GoodEnough" src="imgs/mm2.mp3" loop="false" hidden="true" autostart="true">
+    <embed name="GoodEnough" src="imgs/music.wav" loop="false" hidden="true" autostart="true">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
+    <script src="js_files/fat.js"></script>
+    <script src="js_files/hide_flap.js"></script>
+    <script src="js_files/disappear.js"></script>
+    <script src="voice.js"></script>
+    <!-- <img src="imgs/screen1.jpg"> -->
+    <div id='p5Div' class="layer" ></div>
+
+    <div id="rhyme" style="opacity: 1;">
+        <p ><span style="font-family: 'Handylinedfont'; color: #020746;">Run Run Run </span> <br> fast and stand against the wall 
+           <br> <span>The magician may have <br>just become tall</span></p>
+    </div>
+    
+    <div id="peekaboo">
+        <p >Shout
+           <br> <span style="color: rgb(199, 0, 0);">PEEKABOO!!<br></span></p>
+    </div>
+    <img style="position:absolute;width: 15vw;top: -5vh; z-index: 100;" src="imgs/monkey.png">
+    <img style="position:absolute; top: 59vh;left: -0.8vw; width: 100vw; opacity: 80%; height: 41vh;" src="imgs/grass.png">
+    <img style="position:absolute; top: 59vh;left: -0.8vw; width: 50vw;" src="imgs/bushes.png">
+    <img style="position:absolute; top: 59vh;left: 50vw; width: 50vw;" src="imgs/bushes.png">
+    <img style="position:absolute; left: 13vw; top: 0vh; width: 35vw;height: 85vh" src="imgs/tree_d2.png">
+    <img style="position:absolute;left: 0vw; top:0vh; width: 35vw; height: 95vh;" src="imgs/tree_d1.png">
+    <img style="position:absolute; left: 55vw; top: 0vh; width: 35vw;height: 85vh;" src="imgs/tree_d2.png">
+    <img style="position:absolute; top: 0vh; width: 35vw; height: 95vh;left: 64vw" src="imgs/tree_d1.png">
+    <img style="position:absolute; left: 29vw; top: 65vh; width: 40vw;height: 40vh;" src="imgs/path.png">
+    <a href="page2/index.html">
+    <img id="next" style="position: absolute; width: 5vw; z-index: 100; left: 93vw; top: 48vh;" src="imgs/next.png">
+    </a>
+
+    <div id="flap">
+        <img style="position: absolute; height: 33vw;width:70vh; top: -13vh; left: 0vw;" src="imgs/mirror_ellipse5.png">
+        <p id="flap-text">
+            <!-- <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
+            <span style="color: #860202;">Here is a whispered clue,</span><br>
+
+            <span style="color: #c00202;"> magic, you must follow the words above in blue,</span><br>
+            <span style="color: #860202;">and shout PEEKABOO!!!!</span> -->
+        </p>
+    </div>
+    
+    <!-- <button id="peek" onclick="hide_flap()">PEEKABOO</button> -->
+
+    <!-- <div id="hat" data-postid="17199654" data-share-method="host" data-width="100%" data-aspect-ratio="1.7785714285714287"><a href="https://tenor.com/view/snap-bob-marley-three-little-birds-snap-fingers-lights-out-gif-17199654">Snap Bob Marley GIF</a> from <a href="https://tenor.com/search/snap-gifs">Snap GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
+    <!-- <img id="hat" style="position:absolute; width: 6vw; left:49vw; top: 63vh; z-index: 10;" src="imgs/ball2.png" onclick="hide_flap()"> -->
+    <div id="hat"></div>
+    <!-- <img id="hat" style="position:absolute; width: 10vw; left:45vw; top: 58vh; z-index: 10;" src="imgs/ball.png" onclick="hide_flap()"> -->
+    <img id="chidiya" src="imgs/bird1.png">
+    <img id="chidiya2" src="imgs/bird2.png">
+    <img id="stone1" src="imgs/stone2.png">
+    <img id="stone2" src="imgs/ston3.png">
+    <img id="flr1" src="imgs/yellowflr.png">
+    <img id="flr12" src="imgs/yellowflr.png">
+    <img id="flr2" src="imgs/pink_flower.png">
+    <img id="flr22" src="imgs/pink_flower.png">
+    
+    <img id="flr3" src="imgs/yellowflr.png">
+    <img id="flr4" src="imgs/pink_flower.png">
+    <img id="flr42" src="imgs/pink_flower.png">
+
+
+    
+
+
+</body>
+</html>
