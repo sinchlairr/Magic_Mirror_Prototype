@@ -4,9 +4,9 @@ let theta = 0;
 let cam;
 
 function setup() {
-  cnv = createCanvas(400, 440, WEBGL);
-  // cnv.position(0.25*screen.width,0.3*screen.height);
-  img = loadImage('assets/cat.jpg');
+  createCanvas(600, 500, WEBGL);
+
+  // img = loadImage('assets/cat.jpg');
   // vid = createVideo(['assets/360video_256crop_v2.mp4']);
   vid = createCapture(VIDEO);
   vid.size(710, 400);
@@ -18,16 +18,16 @@ function setup() {
 function draw() {
   background(250);
   noStroke();
-  translate(89, 0, 105);
+  translate(-75, 0, 10);
   push();
-  rotateY(20);
+  rotateY(16);
+  rotateX(2);
+  rotateZ(0.5);
 
-  //70 130
   //pass image as texture
   texture(vid);
-  box(472,170,70);
+  cone(280, 800,500);
   
-  
-  
+
   // theta += 0.05;
 }

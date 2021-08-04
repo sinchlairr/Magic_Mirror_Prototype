@@ -4,14 +4,14 @@ body{
     /* background-size: ?; */
       }
 
-canvas {
+      canvas {
         border-radius: 570px;
         position: absolute;
         z-index: 1;
         /* visibility: hidden; */
         width: 67vw;
-        left: 33vw;
-        top: 13vh;
+        left: 38vw;
+        top: 18vh;
     }
 
 
