@@ -4,7 +4,8 @@ let theta = 0;
 let cam;
 
 function setup() {
-  var cnv = createCanvas(0.42*screen.width, 0.5*screen.height, WEBGL);
+  // var cnv = createCanvas(0.42*screen.width, 0.5*screen.height, WEBGL);
+  var cnv = createCanvas(0.4*windowWidth, 0.9*windowHeight, WEBGL);
   cnv.parent('p5Div');
 
   // vid = createVideo(['assets/360video_256crop_v2.mp4']);

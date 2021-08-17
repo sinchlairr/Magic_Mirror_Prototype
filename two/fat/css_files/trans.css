@@ -1,0 +1,9 @@
+.transition-left{
+    transition: .4s;
+    transform: translateX(0);
+}
+
+html.is-animating .transition-left{
+    opacity: 0;
+    transform: translateX(-100px);
+}

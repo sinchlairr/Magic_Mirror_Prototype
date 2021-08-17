@@ -1,19 +1,39 @@
 body{
-  background-color: #86db9d;
+  background-color: #b9fccb;
   overflow: hidden;
     /* background-size: ?; */
       }
 
 canvas {
-        border-radius: 570px;
+        /* border-radius: 570px;
         position: absolute;
         z-index: 1;
-        /* visibility: hidden; */
+        
         width: 67vw;
         left: 33vw;
-        top: 30vh;
+        top: 30vh; */
+        border-radius: 50px;
+        position: absolute;
+        z-index: 1;
+        width: 100vw;
+        left: 33vw;
+        top: 25vh;
     }
 
+    #hidebtn{
+      z-index: 20000;
+      position: absolute;
+      background-color: #17035e;
+      color: white;
+      font-weight: bolder;
+      border: 0;
+      padding: 10px;
+      border-radius: 10px;
+      left: 49vw;
+      top: 23vh;
+      opacity: 30%;
+    }
+    
 
 /* #p5div {
   position: absolute;
@@ -27,14 +47,18 @@ canvas {
 
 #rhyme{
   position: absolute;
-  left: 38vw;
-  top: 32vh;
+  visibility: hidden;
+  left: 37vw;
+  top: 33vh;
   font-family: 'Quite Magical';
   font-weight: bold;
-  font-size: 2.2vw;
+  font-size: 2.4vw;
   text-align: center;
-  color: #b8083c;
+  color: #2b108c;
   z-index: 10;
+}
+#rhyme.active{
+  visibility: visible;
 }
 
 #peekaboo{
@@ -88,9 +112,10 @@ canvas {
   
   font-size: 2.5vw;
   text-align: center;
-  left: 1vw;
-  top: 10vh;
+  left: 2.5vw;
+  top: -3vh;
   font-family: 'Quite Magical';
+
 
 }
 

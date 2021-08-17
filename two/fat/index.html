@@ -5,25 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bg.css"/>
+    <link rel="stylesheet" href="css_files/trans.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <embed name="GoodEnough" src="imgs/mm2.mp3" loop="false" hidden="true" autostart="true">
+    <!-- <embed name="GoodEnough" src="imgs/mm2.mp3" loop="false" hidden="true" autostart="true"> -->
+    <audio id="audio" src="imgs/mm2.mp3"></audio>
+    <!-- <audio id="clue" src="imgs/aud.mp3" loop="false"></audio> -->
     <embed name="GoodEnough" src="imgs/music.wav" loop="false" hidden="true" autostart="true">
+    <embed name="GoodEnough" src="imgs/aud.mp3" loop="false" hidden="true" autostart="true">
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
-    <script src="js_files/fat.js"></script>
+    <script defer src="js_files/fat.js"></script>
     <script src="js_files/hide_flap.js"></script>
-    <script src="js_files/dissappear.js"></script>
-    <script src="voice.js"></script>
+    <!-- <script src="js_files/audio.js"></script> -->
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+    <!-- <script src="js_files/dissappear.js"></script> -->
+    <!-- <script src="voice.js"></script> -->
     <!-- <img src="imgs/screen1.jpg"> -->
+    <button onclick="fade()" id="hidebtn" >PEEKABOO</button>
     <div id='p5Div' class="layer" ></div>
 
     <div id="rhyme" style="opacity: 1;">
-        <p ><span style="font-family: 'Handylinedfont'; color: #020746;">Wriggle wriggle wriggle </span> <br> and adjust your hat 
+        <p ><span style="font-family: 'Handylinedfont'; color: #020746;">Wriggle wriggle wriggle </span><br>  and adjust your hat 
            <br> <span>Maybe the magician in the mirror <br>magically got fat </span></p>
     </div>
     
@@ -40,25 +47,26 @@
     <img style="position:absolute; left: 55vw; top: 0vh; width: 35vw;height: 85vh;" src="imgs/tree_d2.png">
     <img style="position:absolute; top: 0vh; width: 35vw; height: 95vh;left: 64vw" src="imgs/tree_d1.png">
     <img style="position:absolute; left: 29vw; top: 65vh; width: 40vw;height: 40vh;" src="imgs/path.png">
-    <a href="thin/index.html">
+    <a href="thin/index.html" class="transition-left">
     <img id="next" style="position: absolute; width: 5vw; z-index: 100; left: 93vw; top: 48vh;" src="imgs/next.png">
     </a>
 
     <div id="flap">
+        <!-- <img style="position: absolute; width: 45vw; height: 60vh;  left: -7.5vw; " src="imgs/mirror_ellipse5.png"> -->
         <img style="position: absolute; width: 49vw;height: 80vh; top: -19.5vh; left: -8vw;" src="imgs/mirror_ellipse5.png">
         <p id="flap-text">
-            <!-- <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
-            <span style="color: #860202;">Here is a whispered clue,</span><br>
+            <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
+            <span style="color: #860202;">To hear the whispered clue,</span><br>
 
-            <span style="color: #c00202;"> magic, you must follow the words above in blue,</span><br>
-            <span style="color: #860202;">and shout PEEKABOO!!!!</span> -->
+            <span style="color: #c00202;"> you must shout the word,</span><br>
+            <span style="color: #860202;"><span style="color: #000000; font-size: 3vw;">PEEKABOO!!!!</span></span>
         </p>
     </div>
     
-    <!-- <button id="peek" onclick="hide_flap()">PEEKABOO</button> -->
+    
 
 
-    <img id="hat" style="position:absolute; width: 16vw; left:45vw; top: 58vh; z-index: 10;" src="imgs/hats.png" onclick="hide_flap()">
+    <img id="hat" style="position:absolute; width: 13vw; left:46vw; top: 64vh; z-index: 10;" src="imgs/hats.png" >
     <img id="chidiya" src="imgs/bird1.png">
     <img id="chidiya2" src="imgs/bird2.png">
     <img id="stone1" src="imgs/stone2.png">
@@ -73,7 +81,7 @@
     <img id="flr42" src="imgs/pink_flower.png">
 
 
-    
+  
 
 
 </body>

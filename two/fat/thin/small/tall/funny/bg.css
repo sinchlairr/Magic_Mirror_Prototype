@@ -1,11 +1,11 @@
 body{
-  background-color: #86db9d;
+  background-color: #b9fccb;
   overflow: hidden;
     /* background-size: ?; */
       }
 
 canvas {
-        border-radius: 570px;
+        border-radius: 50px;
         position: absolute;
         z-index: 1;
         /* visibility: hidden; */
@@ -13,7 +13,19 @@ canvas {
         left: 33vw;
         top: 18vh;
     }
-
+    #hidebtn{
+      z-index: 20000;
+      position: absolute;
+      background-color: #17035e;
+      color: white;
+      font-weight: bolder;
+      border: 0;
+      padding: 10px;
+      border-radius: 10px;
+      left: 49.7vw;
+      top: 25vh;
+      opacity: 30%;
+    }
 
 /* #p5div {
   position: absolute;
@@ -35,6 +47,11 @@ canvas {
   text-align: center;
   color: #2b108c;
   z-index: 10;
+  visibility: hidden;
+}
+
+#rhyme.active{
+  visibility: visible;
 }
 
 #peekaboo{
@@ -88,8 +105,8 @@ canvas {
   
   font-size: 2.5vw;
   text-align: center;
-  left: 1vw;
-  top: 10vh;
+  left: 5vw;
+  top: -3vh;
   font-family: 'Quite Magical';
 
 }

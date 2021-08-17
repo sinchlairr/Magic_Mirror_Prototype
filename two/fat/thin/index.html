@@ -10,17 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <embed name="GoodEnough" src="imgs/thin.mp3" loop="false" hidden="true" autostart="true">
+    <!-- <embed name="GoodEnough" src="imgs/thin.mp3" loop="false" hidden="true" autostart="true"> -->
+    <audio id="audio" src="imgs/thin.mp3"></audio>
+    <embed name="GoodEnough" src="imgs/aud.mp3" loop="false" hidden="true" autostart="true">
     <embed name="GoodEnough" src="imgs/music.wav" loop="false" hidden="true" autostart="true">
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
     <script src="js_files/fat.js"></script>
     <script src="js_files/hide_flap.js"></script>
-    <script src="js_files/disappear.js"></script>
+    <!-- <script src="js_files/disappear.js"></script> -->
     <script src="voice.js"></script>
     <!-- <img src="imgs/screen1.jpg"> -->
     <div id='p5Div' class="layer" ></div>
+    <button onclick="fade()" id="hidebtn" >PEEKABOO</button>
 
     <div id="rhyme" style="opacity: 1;">
         <p ><span style="font-family: 'Handylinedfont'; color: #020746;">Click Click Click </span> <br> your fingers and touch your chin, 
@@ -47,18 +50,19 @@
     <div id="flap">
         <img style="position: absolute; width: 49vw;height: 80vh; top: -19.5vh; left: -8vw;" src="imgs/mirror_ellipse5.png">
         <p id="flap-text">
-            <!-- <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
-            <span style="color: #860202;">Here is a whispered clue,</span><br>
+            <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
+            <span style="color: #860202;">To hear the whispered clue,</span><br>
 
-            <span style="color: #c00202;"> magic, you must follow the words above in blue,</span><br>
-            <span style="color: #860202;">and shout PEEKABOO!!!!</span> -->
+            <span style="color: #c00202;"> you must shout the word,</span><br>
+            <span style="color: #860202;">PEEKABOO!!!!</span>
         </p>
     </div>
     
     <!-- <button id="peek" onclick="hide_flap()">PEEKABOO</button> -->
 
     <!-- <div id="hat" data-postid="17199654" data-share-method="host" data-width="100%" data-aspect-ratio="1.7785714285714287"><a href="https://tenor.com/view/snap-bob-marley-three-little-birds-snap-fingers-lights-out-gif-17199654">Snap Bob Marley GIF</a> from <a href="https://tenor.com/search/snap-gifs">Snap GIFs</a></div><script type="text/javascript" async src="https://tenor.com/embed.js"></script> -->
-    <img id="hat" style="position:absolute; width: 10vw; left:45vw; top: 58vh; z-index: 10;" src="imgs/p3.gif" onclick="hide_flap()">
+    <img id="hat" style="position:absolute; width: 10vw; left:48vw; top: 64vh; z-index: 10;" src="imgs/snap.gif" onclick="hide_flap()">
+    <!-- <img id="hat-gif" style="position:absolute; width: 10vw; left:48vw; top: 64vh; z-index: 10; visibility: hidden;" src="imgs/p3.gif" onclick="hide_flap()"> -->
     <!-- <img id="hat" style="position:absolute; width: 10vw; left:45vw; top: 58vh; z-index: 10;" src="imgs/ball.png" onclick="hide_flap()"> -->
     <img id="chidiya" src="imgs/bird1.png">
     <img id="chidiya2" src="imgs/bird2.png">

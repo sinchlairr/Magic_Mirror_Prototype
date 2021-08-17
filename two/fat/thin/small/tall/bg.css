@@ -1,17 +1,18 @@
 body{
-  background-color: #86db9d;
+  background-color: #b9fccb;
   overflow: hidden;
     /* background-size: ?; */
       }
 
 canvas {
-  border-radius: 570px;
+  /* border-radius: 570px; */
+  border-radius: 50px;
   position: absolute;
   z-index: 1;
   /* visibility: hidden; */
   width: 60vw;
-  left: 40vw;
-  top: 26vh;
+  left: 33vw;
+  top: 8vh;
     }
 
 
@@ -25,21 +26,42 @@ canvas {
     } */
 
 
+    #hidebtn{
+      z-index: 20000;
+      position: absolute;
+      background-color: #17035e;
+      color: white;
+      font-weight: bolder;
+      border: 0;
+      padding: 10px;
+      border-radius: 10px;
+      left: 49.7vw;
+      top: 25vh;
+      opacity: 30%;
+    }
+
+
 #rhyme{
   position: absolute;
-  left: 41vw;
-  top: 40vh;
+  left: 41.5vw;
+  top: 35vh;
   font-family: 'Quite Magical';
   font-weight: bold;
   font-size: 2.2vw;
   text-align: center;
   color: #2b108c;
   z-index: 10;
+  visibility: hidden;
+
+}
+
+#rhyme.active{
+  visibility: visible;
 }
 
 #peekaboo{
   position: absolute;
-  left: 45vw;
+  left: 43vw;
   top: 35vh;
   font-family: 'Quite Magical';
   font-weight: bold;
@@ -88,12 +110,11 @@ canvas {
   
   font-size: 2.5vw;
   text-align: center;
-  left: 1vw;
-  top: 10vh;
+  left: 5vw;
+  top: -3vh;
   font-family: 'Quite Magical';
 
 }
-
 span{
   animation: shake 10s ease-in;
 }

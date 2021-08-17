@@ -10,18 +10,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <embed name="GoodEnough" src="imgs/small.mp3" loop="false" hidden="true" autostart="true">
+    <!-- <embed name="GoodEnough" src="imgs/small.mp3" loop="false" hidden="true" autostart="true"> -->
+        <audio id="audio" src="imgs/small.mp3"></audio>
+        <embed name="GoodEnough" src="imgs/aud.mp3" loop="false" hidden="true" autostart="true">
     <embed name="GoodEnough" src="imgs/music.wav" loop="false" hidden="true" autostart="true">
     <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/addons/p5.sound.min.js"></script>
     <script src="js_files/fat.js"></script>
     <script src="js_files/hide_flap.js"></script>
-    <script src="js_files/disappear.js"></script>
-    <script src="voice.js"></script>
+    <!-- <script src="js_files/disappear.js"></script> -->
+    <!-- <script src="voice.js"></script> -->
     <!-- <img src="imgs/screen1.jpg"> -->
     <div id='p5Div' class="layer" ></div>
-
+    <button onclick="fade()" id="hidebtn" >PEEKABOO</button>
     <div id="rhyme" style="opacity: 1;">
         <p ><span style="font-family: 'Handylinedfont'; color: #020746;">Roll Roll Roll </span> <br> like a ball 
            <br> <span>Maybe the magician <br>just got small </span></p>
@@ -47,11 +49,11 @@
     <div id="flap">
         <img style="position: absolute; width: 49vw;height: 80vh; top: -19.5vh; left: -8vw;" src="imgs/mirror_ellipse5.png">
         <p id="flap-text">
-            <!-- <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
-            <span style="color: #860202;">Here is a whispered clue,</span><br>
+            <span style="color: #c00202;">Ssshhhh! Ssshhhh! Chup chup!</span><br>
+            <span style="color: #860202;">To hear the whispered clue,</span><br>
 
-            <span style="color: #c00202;"> magic, you must follow the words above in blue,</span><br>
-            <span style="color: #860202;">and shout PEEKABOO!!!!</span> -->
+            <span style="color: #c00202;"> you must shout the word,</span><br>
+            <span style="color: #860202;"><span style="color: #000000; font-size: 3vw;">PEEKABOO!!!!</span></span>
         </p>
     </div>
     
